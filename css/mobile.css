@@ -1,0 +1,53 @@
+@media screen and (max-width: 420px) {
+  .wrapper nav {
+    padding: 0 10px;
+  }
+  .logo img {
+    width: 170px;
+    height: 60px;
+  }
+  .wrapper .search-box {
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon {
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input {
+    padding-right: 30px;
+  }
+  .carousel-item>h1 {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    color: #ffffff;
+    letter-spacing: 1.5rem;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .carousel-item>img {
+    opacity: 0.8 !important;
+  }
+  .text {
+    margin: 10px 5px;
+    font-size: 24px;
+    color: gray;
+  }
+  .text>p {
+    text-align: center;
+  }
+  .sub-head{
+    font-size: 26px;
+  }
+}

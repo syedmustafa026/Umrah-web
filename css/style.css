@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/***************************************** Header starts ********************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbarzz{
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
+  height: 70px;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbarzz.sticky{
+  background: #ffffff;
+  height: 60px;
+  color: black;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbarzz .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-bars{
+  color: black;
+}
+
+.navbarzz .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #999999;
+  text-decoration: underline 4px;
+  transition: all 0.3s ease;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbarzz .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbarzz.show .menu-list{
+    left: 0%;
+  }
+  .navbarzz .menu-list li{
+    margin-top: 45px;
+  }
+  .navbarzz .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbarzz.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbarzz .logo a{
+    font-size: 27px;
+  }
+}
+
+/******************************************page starts *******************************/
+
+.carousel-item {
+  display: flex;
+  position: relative;
+}
+
+.carousel-item>h1 {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  color: #ffffff;
+  letter-spacing: 1.5rem;
+  font-size: 72px;
+  text-shadow: 5px 5px 5px grey;
+  font-weight: bold !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.carousel-inner {
+  height: 90vh;
+}
+
+.carousel-item>img {
+  opacity: 0.8;
+}
+
+.text {
+  margin: 50px 5px;
+  font-size: 24px;
+  color: gray;
+}
+
+.text>p {
+  text-align: center;
+}
+.sub-head{
+font-size: 50px;
+text-transform: uppercase;
+color: rgb(83, 81, 81);
+}
+.sub-head:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.butn{
+  border: gray double 5px;
+  border-radius: 100px;
+  width: 240px;
+  padding: 10px 20px;
+  transition: width 1s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.butn:hover{
+  background-color: black;
+  color: white;
+  width: 260px;
+  outline: none;
+}
+.butn:active{
+  color: rgb(209, 209, 209);
+  width: 250px;
+text-decoration: underline;
+}
+.comp-head{
+  flex-direction: column;
+  border: 1px gray solid;
+  background-color: rgb(218, 218, 218);
+  padding: 20px 30px;
+}
+.comp-head>h1{
+  text-transform: uppercase;
+}

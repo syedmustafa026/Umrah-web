@@ -1,0 +1,106 @@
+@media screen and (max-width: 900px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  .wrapper #show-menu:checked~.menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .content .links {
+    display: block;
+    position: fixed;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked~.content .links {
+    left: 0%;
+  }
+  .content .links li {
+    margin: 15px 20px;
+  }
+  .content .links li a, .content .links li label {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link {
+    display: none;
+  }
+  /* dropdown responsive code start */
+  .content .links ul, .content .links ul ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked~ul, .content .links #show-services:checked~ul, .content .links #show-items:checked~ul {
+    max-height: 100vh;
+  }
+  .content .links ul li {
+    margin: 7px 20px;
+  }
+  .content .links ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+  .carousel-item>h1 {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: #ffffff;
+    letter-spacing: 1.5rem;
+    font-size: 58px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .carousel-inner {
+    height: 500px;
+  }
+  .carousel-item>img {
+    opacity: 0.8 !important;
+  }
+  .sub-head{
+    font-size: 32px;
+  }
+  .heads>.head1 {
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 52px;
+    text-shadow: 2px 2px 2px rgb(102, 101, 101);
+    font-weight: bold;
+}
+
+.heads>p {
+    color: white;
+    text-align: center;
+    
+}
+.sop-img >img{
+  margin-left: 0px ;
+  width: 100px;
+  height: 100px;
+}
+}
