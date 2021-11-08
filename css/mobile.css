@@ -16,29 +16,7 @@
   .wrapper .search-box input {
     padding-right: 30px;
   }
-  .carousel-item>h1 {
-    position: absolute;
-    left: 30%;
-    top: 20%;
-    color: #ffffff;
-    letter-spacing: 1.5rem;
-    font-size: 32px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    color: black;
-    -webkit-text-fill-color: white;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-  }
-  .carousel-inner {
-    height: 250px;
-  }
-  .carousel-item>img {
-    opacity: 0.8 !important;
-  }
+
   .text {
     margin: 10px 5px;
     font-size: 24px;
@@ -49,5 +27,14 @@
   }
   .sub-head{
     font-size: 26px;
+  }
+  .butn {
+    border: gray double 5px;
+    border-radius: 100px;
+    width: 180px;
+    padding: 10px 20px;
+    transition: width 1s;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
