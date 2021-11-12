@@ -31,7 +31,7 @@
   .butn {
     border: gray double 5px;
     border-radius: 100px;
-    width: 180px;
+    width: 100%;
     padding: 10px 20px;
     transition: width 1s;
     margin-bottom: 10px;
