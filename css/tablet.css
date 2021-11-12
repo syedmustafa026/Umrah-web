@@ -18,6 +18,9 @@
   .icon.hide {
     display: none;
   }
+  .logoimg> .logo{
+    z-index: 20;
+  }
   .navbarzz .menu-list {
     position: fixed;
     height: 100vh;
@@ -64,7 +67,7 @@
     display: block;
     position: absolute;
     bottom: 10%;
-    left: 40%;
+    left: 42.5%;
 }
   .heads>p {
     color: white;
