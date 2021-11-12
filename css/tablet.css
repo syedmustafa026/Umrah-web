@@ -60,7 +60,12 @@
     text-shadow: 2px 2px 2px rgb(102, 101, 101);
     font-weight: bold;
   }
-  
+  .socials{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
   .heads>p {
     color: white;
     text-align: center;
