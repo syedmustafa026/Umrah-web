@@ -12,6 +12,9 @@
   .icon {
     display: block;
   }
+  .dropdown>ul{
+    display: none;
+  }
   .icon.hide {
     display: none;
   }
